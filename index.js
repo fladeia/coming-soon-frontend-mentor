@@ -1,17 +1,24 @@
 const inputEmail = document.querySelector(".input-email");
-const errorIcon = document.querySelector(".error-icon");
+const btnEmail = document.querySelector('.btn-email')
+const btnIcon = document.querySelector('.btn-icon')
 
-function parseEmail() {
+btnEmail.addEventListener('click', (e) => {
+  e.preventDefault()
   if (!inputEmail.validity.valid || inputEmail.value === "") {
     inputEmail.classList.add('input-email-error')
-    inputEmail.value = "Please provide a valid email";
-    errorIcon.style.display = "block";
-    return false;
+    inputEmail.placeholder = "Please provide a valid email";
+    btnIcon.src = './images/icon-error.svg'
+    return
+  } else {
+    inputEmail.value = "Success!";
+    inputEmail.classList.add('input-email-success')
   }
-}
+})
 
-inputEmail.addEventListener('focus', () => {
+inputEmail.addEventListener('click', () => {
   inputEmail.classList.remove('input-email-error')
+  inputEmail.classList.remove('input-email-success')
+  inputEmail.placeholder = "Email Address";
   inputEmail.value = "";
-  errorIcon.style.display = "none";
+  btnIcon.src = './images/icon-arrow.svg'
 })
