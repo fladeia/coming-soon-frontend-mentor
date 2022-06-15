@@ -14,8 +14,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/fladeia/landing-pageFrontendMentor)
-- Live Site URL: [Add live site URL here](https://jolly-bhaskara-4794a9.netlify.app/)
+- [Solution URL](https://github.com/fladeia/landing-pageFrontendMentor)
+- [Live Site URL](https://jolly-bhaskara-4794a9.netlify.app/)
 
 ### Built with
 
